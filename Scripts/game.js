@@ -219,7 +219,7 @@ function CheckIfPlayerDead()
 function move()
 {
     //Player1
-    if(right1 == true && player.x != 400 - grid)
+    if(right1 == true && player.x != canvas.width - grid)
     {
         player.x+=grid
         drawPlayer1()
@@ -236,7 +236,7 @@ function move()
     }
 
     //Player2
-    if(right2 == true && player2.x != 400 - grid)
+    if(right2 == true && player2.x != canvas.width - grid)
     {
         player2.x+=grid
         drawPlayer2()
